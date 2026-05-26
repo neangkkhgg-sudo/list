@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Table</title>
+
+    <!-- Khmer Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Battambang', cursive;
+        }
+
+        body{
+            background: #f2f2f2;
+            padding: 20px;
+        }
+
+        .table-container{
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            background: #fff;
+        }
+
+        thead{
+            background: #3f6ab3;
+            color: white;
+        }
+
+        th, td{
+            border: 1px solid #333;
+            padding: 8px 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        th{
+            font-weight: bold;
+        }
+
+        tbody tr:nth-child(even){
+            background: #f7f7f7;
+        }
+
+        tbody tr:hover{
+            background: #e8eefb;
+            transition: 0.3s;
+        }
+
+        .price{
+            font-weight: bold;
+            color: #000;
+        }
+
+        @media(max-width:768px){
+            th, td{
+                font-size: 12px;
+                padding: 6px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>ល.រ</th>
+                <th>បញ្ជីមុខទំនិញ</th>
+                <th>ចំនួន</th>
+                <th>តម្លៃ</th>
+
+                <th>ល.រ</th>
+                <th>បញ្ជីមុខទំនិញ</th>
+                <th>ចំនួន</th>
+                <th>តម្លៃ</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>ម្ទេស ខៀវ</td>
+                <td>1kg</td>
+                <td class="price">4,500៛</td>
+
+                <td>19</td>
+                <td>សាច់ជ្រូកស្រស់</td>
+                <td>1kg</td>
+                <td class="price">50,000៛</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>ម្ទេស ក្រហម</td>
+                <td>1kg</td>
+                <td class="price">3,500៛</td>
+
+                <td>20</td>
+                <td>សាច់មាន់</td>
+                <td>1kg</td>
+                <td class="price">42,000៛</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>ខ្ទឹមស</td>
+                <td>1kg</td>
+                <td class="price">4,500៛</td>
+
+                <td>21</td>
+                <td>កាំបិតផ្ទះបាយ</td>
+                <td>1kg</td>
+                <td class="price">42,000៛</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>ខ្ទឹមក្រហម</td>
+                <td>1kg</td>
+                <td class="price">3,500៛</td>
+
+                <td>22</td>
+                <td>សាប៊ូលាងចាន</td>
+                <td>1kg</td>
+                <td class="price">80,000៛</td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>ប៉េងប៉ោះ</td>
+                <td>1kg</td>
+                <td class="price">7,000៛</td>
+
+                <td>23</td>
+                <td>ម្សៅស៊ុប</td>
+                <td>1kg</td>
+                <td class="price">45,000៛</td>
+            </tr>
+
+            <tr>
+                <td>6</td>
+                <td>ត្រសក់</td>
+                <td>1kg</td>
+                <td class="price">8,500៛</td>
+
+                <td>24</td>
+                <td>សាប៊ូលាងខោអាវ</td>
+                <td>1kg</td>
+                <td class="price">45,000៛</td>
+            </tr>
+
+            <tr>
+                <td>7</td>
+                <td>បន្លែស្រស់</td>
+                <td>1kg</td>
+                <td class="price">9,000៛</td>
+
+                <td>25</td>
+                <td>ប្រេងឆា</td>
+                <td>1kg</td>
+                <td class="price">28,000៛</td>
+            </tr>
+
+            <tr>
+                <td>8</td>
+                <td>អំបិល</td>
+                <td>1kg</td>
+                <td class="price">12,000៛</td>
+
+                <td>26</td>
+                <td>ទឹកត្រី</td>
+                <td>1kg</td>
+                <td class="price">58,000៛</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
